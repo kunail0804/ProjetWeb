@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>Manga-Index</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Alexandre Crespin / Antonin Rousset">
+        <meta name="description" content="Blog qui raconte une partie de l'histoire de la musique dans les JV et les Animes et donne quelques musiques préférer par les auteurs">
+        <meta name="date" content="2022-12-17T17:42:00+01:00">
+        <link rel="icon" href="img/favicon.ico">
+        <link id="theme" rel="stylesheet" href="CSS/style_clair.css"> 
+    </head>
+    <body id="Anime-index"><!--id pour le fond de fenêtre-->
+        <ul class="main-nav"><!--nemu de nav-->
+            <li><a href="index.html">Aceuil</a></li>
+            <li><a href="JV-index.html">JV</a></li>
+            <li><a href="" id="btn">Anime</a></li>
+            <li><a href="Avis.html">Avis</a></li>
+        </ul>
+        <a id="haut"></a><!--ancre pour retour au haut de la page-->
+        <a href="#haut">
+            <img src="https://www.pngmart.com/files/15/Vector-Arrow-Up-PNG-File.png" alt="flèche vers le haut" width="50" height="50" class="RetourHaut"><!--image ancre-->
+        </a>
+        <main><!--cadre du texte en blanc ou gris-->
+            <h1><em>Les musiques dans les animes</em></h1>
+            <p>
+                Les animes sont depuis toujours des supports important de la culture musicale populaire japonaise.<br>
+                Nous allons donc vous présenter dans ces quelques pages quelques musique marquantes.<br>
+                Nous allons aussi vous donnez nos musique d'animes préférer.
+            </p>
+            <h2><em>Quelques points d'histoire</em></h2>
+            <p>
+                Depuis le debut de la production de films et series d'animation japonaise les musiques sont au coeur de la production.<br>
+                Tout d'abord dans l'optique de toucher un public jeune des musiques d'introduction et de 
+                conclusion se retrouve à chaque début et fin d'episodes: les openings et les endings.<br>
+                En effet des musiques entrainantes rentrent facilement dans la tête des enfants et donc 
+                ramene potentiellement plus d'audience ou cela peut aussi contribuer à la vente de produits dérivées.<br>
+                De plus cela fait connaitre des chanteurs qui peuvent par la suite faire des disques de ses musiques.
+            </p>
+            <h3><em><a href="LesDebuts.html" title="Les Débuts">Les débuts</a></em></h3><!--lien vers une des autres pages des animes-->
+            <p>
+                Les musiques dans les animes se divisent en 2 grandes famille : les Openings et Endings et les OST.<br>
+                Voyons dans la suite quelques-uns de nos openings, endings et OST préférer.
+            </p>
+            <h2><em>Les openings et endings</em></h2>
+            <p>
+                Les openings sont des musiques qui sont joué au début d'un épisode soit après un bref rappel de l'épisode précédent soit directement au lancement de l'épisode.<br>
+                Les endings, quant à eux, sont joué à la fin de l'épisode. Il peut y avoir à la fin de celui-ci des scène bonus ou des teasers pour l'épisode suivant.
+            </p>
+            <h3><em><a href="OpEtEd.html" title="Les openings et endings">Les openings et endings (partielement complet)</a></em></h3><!--lien vers une des autres pages des animes-->
+            <h2><em>Les OST</em></h2>
+            <p>
+                Les OST, enfin, sont toutes les autres musiques utilisé dans un animes.<br>
+                Les OST sont donc des musiques d'ambiance qui donne une certaine émotion à une action à l'intérieur même de l'épisode.<br>
+                On parle aussi de thème dans le cadre d'un personnage (par exemple le thème d'un personnage peut être utiliser quand celui-ci gagne un combat).
+            </p>
+            <h3><em><a href="OST.html" title="Les OST">Les OST (partielement complet)</a></em></h3>
+            <div id="flecheRetour"><!--fleche de retour à la page parente-->
+                <a href="index.html"><img src="https://cdn-icons-png.flaticon.com/512/25/25618.png" width="80" height="80" alt="fleche allant vers la gauche qui permet de revenir à la page parente"></a>
+            </div>
+        </main>
+        <footer><!--pied de page-->
+            <p>© 2022 Rousset,Crespin | </p>
+            <button id="theme-B" type="button"><img src="https://cdn-icons-png.flaticon.com/512/6714/6714978.png" width="40" height="40" alt="image d'une lune parmettant de mettre en mode sombre"></button><!--bouton de changement de css-->
+        </footer>
+        <!--script de changement de css-->
+        <script>
+            document.querySelector("#theme-B").addEventListener("click", (event) => {
+                const theme = document.querySelector("#theme");
+                if (theme.getAttribute("href") === "CSS/style_sombre.css"){
+                    theme.setAttribute("href","CSS/style_clair.css");
+                    return;
+                }
+                theme.setAttribute("href","CSS/style_sombre.css");  
+            });
+        </script>
+    </body>
+</html>

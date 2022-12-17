@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>Avis</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Alexandre Crespin / Antonin Rousset">
+        <meta name="description" content="Blog qui raconte une partie de l'histoire de la musique dans les JV et les Animes et donne quelques musiques préférer par les auteurs">
+        <meta name="date" content="2022-12-17T17:42:00+01:00">
+        <link rel="icon" href="img/favicon.ico">
+        <link id="theme" rel="stylesheet" href="CSS/style_clair.css"> 
+    </head>
+    <body id="Aceuil"><!--même id que index.html car pas besoins de cadre-->
+        <ul class="main-nav"><!--menu de nav-->
+            <li><a href="index.html">Aceuil</a></li>
+            <li><a href="JV-index.html">JV</a></li>
+            <li><a href="Anime-index.html">Anime</a></li>
+            <li><a href="" id="btn">Avis</a></li>
+        </ul>
+        <a id="haut"></a><!--ancre pour retour au haut de la page-->
+        <a href="#haut">
+            <img src="https://www.pngmart.com/files/15/Vector-Arrow-Up-PNG-File.png" alt="flèche vers le haut" width="50" height="50" class="RetourHaut"><!--image ancre-->
+        </a>
+        <main><!--cadre de même couleur que le body pour être invisible-->
+            <form id="form" action="mailto:MyMail@gmail.com?content-type=text/html&subject=Site%20Web" method="post" enctype="text/plain"><!--formulaire-->
+                <p>
+                    <label for="nom">Nom</label>
+                    <input id="nom" type="text" name="nom" value=" ">
+                    <label for="prenom">Prenom</label>
+                    <input id="prenom" type="text" name="prenom" value=" ">
+                    <br>
+                    <label for="email">Email</label>
+                    <input id="email" type="email" name="email" value=" ">
+                    <br>
+                    <textarea name="avis" rows="5" cols="50" id="avis">Donnez votre avis sur le site...</textarea>
+                    <br>
+                    <input type="submit" value="Envoyer">
+                </p>
+            </form>
+        </main>
+        <footer><!--pied de page-->
+            <p>© 2022 Rousset,Crespin | </p>
+            <button id="theme-B" type="button"><img src="https://cdn-icons-png.flaticon.com/512/6714/6714978.png" width="40" height="40" alt="image d'une lune parmettant de mettre en mode sombre"></button><!--bouton de changement de css-->
+        </footer>
+        <!--script de changement de css-->
+        <script>
+            document.querySelector("#theme-B").addEventListener("click", (event) => {
+                const theme = document.querySelector("#theme");
+                if (theme.getAttribute("href") === "CSS/style_sombre.css"){
+                    theme.setAttribute("href","CSS/style_clair.css");
+                    return;
+                }
+                theme.setAttribute("href","CSS/style_sombre.css");  
+            });
+        </script>
+    </body>
+</html>

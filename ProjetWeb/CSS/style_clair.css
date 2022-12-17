@@ -1,0 +1,132 @@
+/*Feuille de style par défaut
+ *style clair avec fond plutôt coloré*/
+
+
+/*gestion de la balise audio dans JV-index.html*/
+audio:hover {transform: scale(1.1);filter: drop-shadow(2px 3px 3px #333); z-index: 1;}
+audio::-webkit-media-controls-panel{background-color:rgb(169, 164, 196);}
+
+/*gestion de la page entière*/
+body {
+    color: #333;
+    font: 1.2em / 1.5 Helvetica Neue, Helvetica, Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+/*cas de la page JV-index.html*/
+#JV{
+    background-image: linear-gradient(rgba(73, 73, 73, 0.5), rgba(73, 73, 73, 0.5)),
+    url("https://img.freepik.com/premium-vector/gaming-console-joystick-seamless-background_615746-88.jpg?w=826");
+    background-size: cover;
+}
+/*cas de la page Anime-index.html*/
+#Anime-index{
+    background-image: linear-gradient(rgba(73, 73, 73, 0.5), rgba(73, 73, 73, 0.5)),
+    url("https://wallpapercave.com/wp/wp6661431.jpg");
+    background-size: cover;
+}
+/*cas des autres pages d'anime*/
+#Anime{
+    background-image: linear-gradient(rgba(73, 73, 73, 0.5), rgba(73, 73, 73, 0.5)),
+    url("https://wallpaper.dog/large/5467741.png");
+    background-size: cover;
+}
+
+/*cas particulier des pages ne possédant pas assez de contenue*/
+#Aceuil main{
+    margin-bottom: 22%;
+}
+
+/*cadre de couleur blanche possèdant le texte à l'interieur*/
+main{
+    background-color: rgba(255, 255, 255,0.8);
+    width: 90%;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2.5%;
+    padding-top: 4.5%;
+    padding-bottom: 1%;
+}
+
+/*pied de page*/
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: #4b37f8;
+    color: #fff;
+}
+
+/*position de la flèche vers le haut*/
+.RetourHaut {
+    position: fixed;
+    right:1%;
+    bottom: 1%;
+}
+/*position de la flèche vers la gauche*/
+#flecheRetour{
+    text-align: left;
+    margin-left: 1%;
+}
+
+/*gestion de la barre de naviguation*/
+.main-nav {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: fixed;
+}
+.main-nav a {
+    padding: .5em 1em;
+    display: block;
+}
+
+ul.main-nav {
+	z-index: 2;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333399;
+	position: fixed;
+	top: 0;
+	width: 100%
+}
+li  {
+	float: left;
+}
+li a {
+	display: block;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+
+}
+li a:hover:not(#btn) {  /*couleur qui change si la souris passe sur un btn*/
+	background-color: #0039e6
+}
+li a#btn {  /*couleur qui change si btn est la page active*/
+	color: white;
+	background-color: #5900ff
+}
+
+/*gestion du formulaire*/
+form{
+    text-align: center;
+}
+#avis{
+    font: 1em / 1.5 Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+/*gestion de l'image de changement de css*/
+#theme-B{
+    background-color: #4b37f8;
+    text-align: center;
+    border: none;
+    color: white;
+    font: 1.2em / 1.5 Helvetica Neue, Helvetica, Arial, sans-serif;
+    margin-top: 0.2em;
+    margin-right: 1em;
+}

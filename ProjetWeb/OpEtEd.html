@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>Les openings et endings</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Alexandre Crespin / Antonin Rousset">
+        <meta name="description" content="Blog qui raconte une partie de l'histoire de la musique dans les JV et les Animes et donne quelques musiques préférer par les auteurs">
+        <meta name="date" content="2022-12-17T17:42:00+01:00">
+        <link rel="icon" href="img/favicon.ico">
+        <link id="theme" rel="stylesheet" href="CSS/style_clair.css"> 
+    </head>
+    <body id="Anime"><!--id pour image du fond de fenêtre-->
+        <ul class="main-nav"><!--menu de nav-->
+            <li><a href="index.html">Aceuil</a></li>
+            <li><a href="JV-index.html">JV</a></li>
+            <li><a href="Anime-index.html">Anime</a></li>
+            <li><a href="Avis.html">Avis</a></li>
+        </ul>
+        <a id="haut"></a><!--ancre pour retour au haut de la page-->
+        <a href="#haut">
+            <img src="https://www.pngmart.com/files/15/Vector-Arrow-Up-PNG-File.png" alt="flèche vers le haut" width="50" height="50" class="RetourHaut"><!--image ancre-->
+        </a>
+        <main><!--cadre blanc ou gris-->
+            <h1><em>Les openings et endings</em></h1>
+            <p>
+                Je vais donner ici certains openings et endings que j'aime particulièrement,<br>
+                Cette liste n'est absolument pas dans l'ordre de mes préférences et n'est en aucun cas quelques chose d'objectif.
+            </p>
+            <p>
+                Le premier élément de cette liste est un opening que j'écoute pratiquement tous les jours.<br>
+                Il s'agit de l'opening d'Evangelion.
+            </p>
+            <!--video evangelion-->
+            <iframe width="280" height="184" src="https://www.youtube.com/embed/k8ozVkIkr-g" title="YouTube video player" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p>
+                Passons à l'un des opening que j'ai le plus écouter de ma vie.<br>
+                Il s'agit du premier opening de Nanatsu no Taizai (Seven Deadly Sins).
+            </p>
+            <!--video seven deadly sins-->
+            <iframe width="280" height="184" src="https://www.youtube.com/embed/x2ex07fceig" title="YouTube video player" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p>
+                Le prochain est un grand classique. Il fallait évidement parler de lui.<br>
+                One Piece est le plus grand anime de tous les temps par son nombre de fan.<br>
+                Il faut donc inévitablement mettre dans cette liste l'opening 1 de celui-ci.
+            </p>
+            <!--video one piece-->
+            <iframe width="280" height="184" src="https://www.youtube.com/embed/HRaoYuRKBaA" title="YouTube video player" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p>
+                Après One Piece, son homologue : Naruto.<br>
+                Et ici nous prenons le plus connus des openings de Naruto et Shippuden : Blue Bird.
+            </p>
+            <!--video naruto-->
+            <iframe width="280" height="184" src="https://www.youtube.com/embed/aJRu5ltxXjc" title="YouTube video player" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p>
+                Tant que nous sommes dans les classique, autant parler de Hunter x Hunter et son opening mythique.<br>
+                J'ajouterai ici aussi l'un des ending qui me tient aussi particulièrement à coeur.
+            </p>
+            <!--video op hxh-->
+            <iframe width="280" height="184" src="https://www.youtube.com/embed/faqmNf_fZlE" title="YouTube video player" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <!--video ed hxh-->
+            <iframe width="280" height="184" src="https://www.youtube.com/embed/cott-MKdHWA" title="YouTube video player" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p>
+                Il reste encore plein d'autres openings et endins qui nous tiennent particulièrement à coeur mais le temps manque pour tous vous les présenter.
+            </p>
+            <div id="flecheRetour"><!--fleche retour page parente-->
+                <a href="Anime-index.html"><img src="https://cdn-icons-png.flaticon.com/512/25/25618.png" width="80" height="80" alt="fleche allant vers la gauche qui permet de revenir à la page parente"></a>
+            </div>
+        </main>
+        <footer><!--pied de page-->
+            <p>© 2022 Rousset,Crespin | </p>
+            <button id="theme-B" type="button"><img src="https://cdn-icons-png.flaticon.com/512/6714/6714978.png" width="40" height="40" alt="image d'une lune parmettant de mettre en mode sombre"></button><!--bouton de changement de css-->
+        </footer>
+        <!--script de changement de css-->
+        <script>
+            document.querySelector("#theme-B").addEventListener("click", (event) => {
+                const theme = document.querySelector("#theme");
+                if (theme.getAttribute("href") === "CSS/style_sombre.css"){
+                    theme.setAttribute("href","CSS/style_clair.css");
+                    return;
+                }
+                theme.setAttribute("href","CSS/style_sombre.css");  
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>Aceuil</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Alexandre Crespin / Antonin Rousset">
+        <meta name="description" content="Blog qui raconte une partie de l'histoire de la musique dans les JV et les Animes et donne quelques musiques préférer par les auteurs">
+        <meta name="date" content="2022-12-17T17:42:00+01:00">
+        <link rel="icon" href="img/favicon.ico">
+        <link id="theme" rel="stylesheet" href="CSS/style_clair.css"> 
+    </head>
+    <body id="Aceuil"><!--id pour le differencier des pages avec le cadre-->
+        <ul class="main-nav"><!--menu de naviguation-->
+            <li><a href="" id="btn">Aceuil</a></li>
+            <li><a href="JV-index.html">JV</a></li>
+            <li><a href="Anime-index.html">Anime</a></li>
+            <li><a href="Avis.html">Avis</a></li>
+        </ul>
+        <a id="haut"></a><!--ancre pour retour au haut de la page-->
+        <a href="#haut">
+            <img src="https://www.pngmart.com/files/15/Vector-Arrow-Up-PNG-File.png" alt="flèche vers le haut" width="50" height="50" class="RetourHaut"><!--image ancre en elle même-->
+        </a>
+        <main><!--cadre du texte invisible ici-->
+            <h1><em>Bienvenue !</em></h1><!--tous les titres sont en italique pour leur donner plus d'importance-->
+            <h2><em>Quel est ce site ?</em></h2>
+            <p>
+                Ce site est une sorte de blog dans lequel nous allons vous présenter l'histoire des musiques dans les jeux-vidéos (partie JV) et dans les Animes (partie Anime).<br>
+                Nous vous présenterons aussi quelques-uns de nos musiques présérer dans ces deux matières.
+            </p>
+            <h2><em>Expliquation de la naviguation du site</em></h2>
+            <p>
+                Ce site est diviser en deux grande partie que vous pouvez acceder via la barre de naviguation horizontale en haut de la fenêtre ou par les lien suivant :
+            </p>
+                <a href="JV-index.html">Partie jeux vidéo</a><br>
+                <a href="Anime-index.html">Partie Anime</a>
+            <p>
+                De plus dans la partie Anime différentes sous parties sont présente et sont accéssible sur la page de la partie anime.
+            </p>
+            <p>
+                Vous pouvez à tous moment dans ses pages retourner à la page parente via la flèche de direction gauche en bas à gauche de chaque page.<br>
+                Enfin dans chaque page vous pouvez trouver aussi une flèche avec pour direction le haut qui vous permet de remonter rapidement en haut de la page. Elle se trouve en bas à droite de la fenêtre.
+            </p>
+            <h2><em>Pour la configuration</em></h2>
+            <p>
+                En bas de chaque page se trouve un bandeau bleu. A la suite des nom des auteurs vous trouverai une image en forme de lune noir.<br>
+                Cette image est un boutton qui vous permet de passer la page active et seulement celle-ci dans un mode sombre.
+            </p>
+        </main>
+        <footer><!--cadre bleu de bas de page-->
+            <p>© 2022 Rousset,Crespin | </p>
+            <button id="theme-B" type="button"><img src="https://cdn-icons-png.flaticon.com/512/6714/6714978.png" width="40" height="40" alt="image d'une lune parmettant de mettre en mode sombre"></button><!--bouton pour mettre en mode sombre-->
+        </footer>
+        <!--script pour changer le css-->
+        <script>
+            document.querySelector("#theme-B").addEventListener("click", (event) => {
+                const theme = document.querySelector("#theme");
+                if (theme.getAttribute("href") === "CSS/style_sombre.css"){
+                    theme.setAttribute("href","CSS/style_clair.css");
+                    return;
+                }
+                theme.setAttribute("href","CSS/style_sombre.css");  
+            });
+        </script>
+    </body>
+</html>

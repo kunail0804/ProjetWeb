@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>Les OST</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Alexandre Crespin / Antonin Rousset">
+        <meta name="description" content="Blog qui raconte une partie de l'histoire de la musique dans les JV et les Animes et donne quelques musiques préférer par les auteurs">
+        <meta name="date" content="2022-12-17T17:42:00+01:00">
+        <link rel="icon" href="img/favicon.ico">
+        <link id="theme" rel="stylesheet" href="CSS/style_clair.css"> 
+    </head>
+    <body id="Anime"><!--id pour image du fond de fenêtre-->
+        <ul class="main-nav"><!--menu de nav-->
+            <li><a href="index.html">Aceuil</a></li>
+            <li><a href="JV-index.html">JV</a></li>
+            <li><a href="Anime-index.html">Anime</a></li>
+            <li><a href="Avis.html">Avis</a></li>
+        </ul>
+        <a id="haut"></a><!--ancre pour retour au haut de la page-->
+        <a href="#haut">
+            <img src="https://www.pngmart.com/files/15/Vector-Arrow-Up-PNG-File.png" alt="flèche vers le haut" width="50" height="50" class="RetourHaut"><!--image ancre-->
+        </a>
+        <main><!--cadre blanc ou gris-->
+            <h1><em>Les OST</em></h1>
+            <p>
+                Je vais donner ici certains OST que j'aime particulièrement,<br>
+                Cette liste n'est absolument pas dans l'ordre de mes préférences et n'est en aucun cas quelques chose d'objectif.
+            </p>
+            <p>
+                Le premier élément de cette liste est un OST de mon anime préférer Code Geass.<br>
+                Il s'agit de Picaresque.
+            </p>
+            <!--video Picaresque-->
+            <iframe width="280" height="184" src="https://www.youtube.com/embed/jQMX6sjeBAg" title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p>
+                Passons à un autre OST.<br>
+                Il s'agit encore d'un OST de Code Geass : Callin'.
+            </p>
+            <!--video Callin-->
+            <iframe width="280" height="184" src="https://www.youtube.com/embed/KSh9KvV39xM" title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p>
+                Le prochain est un grand classique. Il fallait évidement parler de lui.<br>
+                JOJO bizarre adventure est l'un des animes les plus connus.<br>
+                Il faut donc inévitablement mettre dans cette liste le thème de Giorno : Il vento d'oro.
+            </p>
+            <!--video il vento d"oro-->
+            <iframe width="280" height="184" src="https://www.youtube.com/embed/623JGFAYZ3w" title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p>
+                Le prochain est un OST de l'adaptation en anime du JV Persona 5.<br>
+                Il s'agit de Crisis.
+            </p>
+            <!--video Crisis-->
+            <iframe width="280" height="184" src="https://www.youtube.com/embed/-rdExsB5H1k" title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p>
+                Tant que nous sommes dans les classique, autant parler de Hunter x Hunter et ses OST mythique.<br>
+                Ici deux OST juste manifique.
+            </p>
+            <!--video hxh-->
+            <iframe width="280" height="184" src="https://www.youtube.com/embed/ItCVU1jzOAM" title="YouTube video player" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <!--video hxh-->
+            <iframe width="280" height="184" src="https://www.youtube.com/embed/pucT5R6AV5o" title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p>
+                Il reste encore plein d'autres OSTs qui nous tiennent particulièrement à coeur mais le temps manque pour tous vous les présenter.
+            </p>
+            <div id="flecheRetour"><!--fleche retour page parente-->
+                <a href="Anime-index.html"><img src="https://cdn-icons-png.flaticon.com/512/25/25618.png" width="80" height="80" alt="fleche allant vers la gauche qui permet de revenir à la page parente"></a>
+            </div>
+        </main>
+        <footer><!--pied de page-->
+            <p>© 2022 Rousset,Crespin | </p>
+            <button id="theme-B" type="button"><img src="https://cdn-icons-png.flaticon.com/512/6714/6714978.png" width="40" height="40" alt="image d'une lune parmettant de mettre en mode sombre"></button><!--bouton de changement de css-->
+        </footer>
+        <!--script de changement de css-->
+        <script>
+            document.querySelector("#theme-B").addEventListener("click", (event) => {
+                const theme = document.querySelector("#theme");
+                if (theme.getAttribute("href") === "CSS/style_sombre.css"){
+                    theme.setAttribute("href","CSS/style_clair.css");
+                    return;
+                }
+                theme.setAttribute("href","CSS/style_sombre.css");  
+            });
+        </script>
+    </body>
+</html>
